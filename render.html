@@ -1,0 +1,16 @@
+Vue.component("com2",{
+  data(){
+      return {
+          show: true
+      }
+  },
+  methods:{
+       hClick(){
+           console.info("clicked")
+       }
+  }
+  template:`
+   <div id="element" :class="{show:show}" @click="hClick">
+     div的内容
+   </div>` 
+})
